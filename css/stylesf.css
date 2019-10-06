@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
 
 /*	*************************************************
-	BASE 
+	BASE
 	************************************************* */
 
 * {
@@ -12,12 +12,16 @@
 body {
 	width: 80%;
 	margin: 0 auto;
-    font-family: sans-serif;
+  font-family: sans-serif;
+	position: relative;
+	background: transparent;
+	overflow-x: hidden;
+
 }
 
 ul {
     list-style-type: none;
-} 
+}
 a {
     text-decoration: none;
     color: black;
@@ -28,7 +32,7 @@ a:hover{
     color: #fff;
 }
 /*	*************************************************
-	HEADER 
+	HEADER
 	************************************************* */
 
 header {
@@ -72,7 +76,7 @@ header nav a:hover {
 
 
 /*	*************************************************
-	MAIN 
+	MAIN
 	************************************************* */
 
 main {
@@ -82,7 +86,7 @@ main {
 
 main h1 {
     background: #b11a21 ;
-    padding: 10px;    
+    padding: 10px;
 }
 
 h1 + h2 {
@@ -91,7 +95,7 @@ h1 + h2 {
 
 
 /*	*************************************************
-	FOOTER 
+	FOOTER
 	************************************************* */
 
 footer {
@@ -106,7 +110,7 @@ footer {
 }
 
 /*	*************************************************
-	CSS GRID 
+	CSS GRID
 	************************************************* */
 
 
@@ -144,3 +148,17 @@ main p {
     grid-column: 2;
 }
 
+/* With great inspiration from: https://github.com/bdimitrovski/full_clip */
+
+.fullBackground {
+  background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+  width: 100%;
+	height: 100%;
+	opacity: 0.25;
+	z-index: -1;
+}
