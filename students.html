@@ -3,9 +3,12 @@
    <head>
       <meta charset="utf-8">
      <link rel="stylesheet" type="text/css" href="css/stylesf.css"/>
+     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+     <script src="js/fullclip.js"></script>
       <title> Students | Assignment 4 </title>
    </head>
    <body>
+     <div class="fullBackground"></div>
       <header>
          <h1 class = "header-title"> Browse Students </h1>
         <nav><a href="index.html">Home</a></nav>
@@ -19,18 +22,25 @@
            <h3 id="katty">Katty </h3>
           <img src="http://csc174.org/assignment01/iakhmedo/images/islomzhan.jpg"/>
              <p>As I progress through this major, it's exciting to be able to move beyond the introductory courses and choose others that are unique to the topics that I am interested in. This semester I will be taking The Art of Film and Modern Architecture, both of which are subjects that are very new to me, but I am eager to learn more about. I am also continuing this CSC web development series, after taking CSC 170 last spring, and although I do not intend on pursuing computer science as a career, I think the fundamental skills learned are invaluable as the world becomes more digitized and driven by technology.</p>
-          
+
          <h2> Other Majors </h2>
             <h3 id="andrew">Andrew Thankson</h3>
             <img src="http://csc174.org/assignment01/iakhmedo/images/islomzhan.jpg"/>
             <p>After graduating high school, I was faced with the decision of studying in my home country, Ghana, or apply to schools outside my home country. I decided to give the latter choice a shot. I took my SATs, wrote lots of essays and ended up applying early decision to the University of Rochester. I got in right away and accepted to go there as it was one of the top schools I was looking to attend. I arrived at college the summer before the start of my first year to participate in an early connections program called the Summer Start Program which was geared at helping students learn more about the University's campus, make early connections and also get a feel of college classes. I took classes in Engineering, Writing and also in College Success. It was during this period that I decided to switch my intended major from Electrical and Computer Engineering to Computer Science.</p>
 
       </main>
-      
-      
+
+
       <footer>
           <img class="footer-logo" src="images/university-of-reochester-seal.png"/>
           <p>CSC 174: Advanced Front-end Web Design and Development </p>
        </footer>
+       <script>
+       $('.fullBackground').fullClip({
+         images: ['images/cuba1.jpg', 'images/cuba2.jpg', 'images/cuba3.jpg', 'images/cuba4.jpg', 'images/cuba5.jpg'],
+         transitionTime: 1000,
+         wait: 7000
+       });
+       </script>
    </body>
 </html>
