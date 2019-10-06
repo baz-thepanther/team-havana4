@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Ubuntu&display=swap');
 
 /*	*************************************************
-	BASE 
+	BASE
 	************************************************* */
 
 * {
@@ -13,11 +13,15 @@ body {
 	width: 80%;
 	margin: 0 auto;
     font-family: sans-serif;
+/* ---------------here------------- */
+	position: relative;
+	background: transparent;
+	overflow-x: hidden;
 }
 
 ul {
     list-style-type: none;
-} 
+}
 a {
     text-decoration: none;
     color: black;
@@ -28,7 +32,7 @@ a:hover{
     color: #fff;
 }
 /*	*************************************************
-	HEADER 
+	HEADER
 	************************************************* */
 
 header {
@@ -73,7 +77,7 @@ header nav a:hover {
 
 
 /*	*************************************************
-	FIGURE 
+	FIGURE
 	************************************************* */
 
 figure img {
@@ -81,7 +85,7 @@ figure img {
 }
 
 /*	*************************************************
-	ASIDE 
+	ASIDE
 	************************************************* */
 aside {
 /*	background: #e1e8f0;*/
@@ -89,26 +93,26 @@ aside {
 	color: dimgray;
     line-height: 2em;
     text-align: center;
-    
+
     font-size: 1.1em;
 }
 
 /*	*************************************************
-	ARTICLE 
+	ARTICLE
 	************************************************* */
 article {
 /*    background: #93EFF1;*/
 	padding: 15px;
 	color: dimgray;
     line-height: 2em;
-    text-align: center;    
+    text-align: center;
 }
 article p {
     padding: 15px 0px;
 }
 
 /*	*************************************************
-	MAIN 
+	MAIN
 	************************************************* */
 
 main {
@@ -124,7 +128,7 @@ main h1 {
     color: #fff;
     padding: 10px;
     text-align: center;
-    
+
 }
 main h2 {
     opacity: 0.9;
@@ -135,7 +139,7 @@ h1 + h2 {
 
 
 /*	*************************************************
-	FOOTER 
+	FOOTER
 	************************************************* */
 
 footer {
@@ -157,6 +161,7 @@ footer {
 body {
 	display: grid;
 	grid-template-columns: 250px 1fr 35%;
+
 }
 
 @media ( max-width: 675px) {
@@ -168,6 +173,9 @@ body {
 header {
 	grid-column: 1 / span 3;
 }
+
+
+
 
 figure {
 	grid-column: 1 / span 3;
@@ -190,4 +198,22 @@ main {
 
 footer {
 	grid-column: 1 / span 3;
+}
+
+
+
+/* With great inspiration from: https://github.com/bdimitrovski/full_clip */
+
+
+.fullBackground {
+  background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+  width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	z-index: -1;
 }
