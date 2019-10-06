@@ -4,13 +4,17 @@
       <meta charset="utf-8">
       <title>Home | Assignment 4: </title>
       <link rel="stylesheet" type="text/css" href="css/stylesz.css"/>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="js/fullclip.js"></script>
    </head>
-   <body>
+
+      <body>
+        <div class="fullBackground"></div>
       <header>
          <h1 class = "header-title">Majors in CSC 174</h1>
          <nav><a href="students.html">Browse Students</a></nav>
       </header>
-      
+
        <figure>
              <img src="images/alexander-kunze-havana.jpg" alt="Havana">
        </figure>
@@ -36,5 +40,13 @@
           <img class="footer-logo" src="images/university-of-reochester-seal.png"/>
           <p>CSC 174: Advanced Front-end Web Design and Development </p>
        </footer>
+
+       <script>
+       $('.fullBackground').fullClip({
+         images: ['images/cuba1.jpg', 'images/cuba2.jpg', 'images/cuba3.jpg', 'images/cuba4.jpg', 'images/cuba5.jpg'],
+         transitionTime: 1000,
+         wait: 7000
+       });
+       </script>
    </body>
 </html>
