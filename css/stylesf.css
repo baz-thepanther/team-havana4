@@ -15,6 +15,7 @@ body {
 	background: transparent;
 	overflow-x: hidden;
 
+
 }
 
 ul {
@@ -98,11 +99,11 @@ h1 + h2 {
 
 footer {
 	background: #393f4d;
-    margin-bottom: 20px;
 	font-size: 1.25em;
 	padding: 35px 0;
 	height: 130px;
 	text-align: center;
+    padding-bottom: 50px;
 }
 .footer-logo {
     width: 130px;
@@ -119,6 +120,7 @@ main {
     grid-row-gap: 20px;
     grid-column-gap: 10px;
     margin-bottom: 35px;
+    margin: 30px 40px;
 
 }
 

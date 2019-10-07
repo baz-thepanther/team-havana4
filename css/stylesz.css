@@ -13,6 +13,7 @@ body {
 	width: 80%;
 	margin: 0 auto;
     font-family: sans-serif;
+    color: white;
     
 }
 
@@ -78,10 +79,13 @@ header nav a:hover {
 aside {
 /*	background: #e1e8f0;*/
 	padding: 15px;
-	color: dimgray;
     line-height: 2em;
     text-align: center;
     font-size: 1.1em;
+    color: red;
+    text-shadow: 1px 1px black;
+    border: groove red 2px;
+    margin: 20px;
 }
 
 /*	*************************************************
@@ -90,9 +94,11 @@ aside {
 article {
 /*    background: #93EFF1;*/
 	padding: 15px;
-	color: dimgray;
     line-height: 2em;
     text-align: center;
+    color: black;
+    font-weight: bolder;
+    text-shadow: 1px 1px whitesmoke;
 }
 article p {
     padding: 15px 0px;
@@ -118,7 +124,7 @@ main h1 {
 
 }
 main h2 {
-    opacity: 0.9;
+    opacity: 0.75;
 }
 h1 + h2 {
     margin-top: 10px;
@@ -135,7 +141,8 @@ footer {
 	padding: 35px 0;
 	height: 130px;
 	text-align: center;
-    margin-bottom: 20px;
+    padding-bottom: 50px;
+    color: black;
 }
 .footer-logo {
     width: 130px;
@@ -194,7 +201,7 @@ footer {
 /* With great inspiration from: https://github.com/bdimitrovski/full_clip */
 
 .fullBackground {
-    display: absolute !important;
+    display: absolute;
     top:0;
     left:0;
     height: 100%;
@@ -202,4 +209,6 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
 }
