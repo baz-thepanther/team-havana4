@@ -80,7 +80,7 @@ header nav a:hover {
 	FIGURE
 	************************************************* */
 
-figure {
+section {
 }
 
 /*	*************************************************
@@ -175,9 +175,9 @@ header {
 
 
 
-figure {
+section {
 	grid-column: 1 / span 3;
-    height: 500px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -204,16 +204,10 @@ footer {
 
 /* With great inspiration from: https://github.com/bdimitrovski/full_clip */
 
-
 .fullBackground {
-    background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	left: 0;
+    height: 960px;
     width: 100%;
-    height: 100%;
-	opacity: 0.3;
-	z-index: -1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
