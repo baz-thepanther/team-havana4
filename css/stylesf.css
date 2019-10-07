@@ -99,7 +99,8 @@ h1 + h2 {
 	************************************************* */
 
 footer {
-	background-color: #393f4d;
+	background: #393f4d;
+    margin-bottom: 20px;
 	font-size: 1.25em;
 	padding: 35px 0;
 	height: 130px;
@@ -119,12 +120,8 @@ main {
 	grid-template-columns: 250px 1fr;
     grid-row-gap: 20px;
     grid-column-gap: 10px;
-}
+    margin-bottom: 35px;
 
-@media ( max-width: 675px) {
-	main {
-		display: block;
-	}
 }
 
 main h2 {
@@ -133,12 +130,19 @@ main h2 {
     color: black;
     padding: 10px;
     margin: 10px;
+    border-style: groove;
+    border-width: 2px;
+    border-color: black;
 }
 
 main img {
     grid-column: 1;
     padding: 10px;
     margin-top: -40px;
+    background-color: silver;
+    background-size: contain;
+    width: 200px;
+    height: 260px;
 }
 main h3 {
     grid-column: 2;
@@ -146,19 +150,4 @@ main h3 {
 
 main p {
     grid-column: 2;
-}
-
-/* With great inspiration from: https://github.com/bdimitrovski/full_clip */
-
-.fullBackground {
-  background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	left: 0;
-  width: 100%;
-	height: 100%;
-	opacity: 0.25;
-	z-index: -1;
 }

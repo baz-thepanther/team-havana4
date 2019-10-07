@@ -13,10 +13,6 @@ body {
 	width: 80%;
 	margin: 0 auto;
     font-family: sans-serif;
-/* ---------------here------------- */
-	position: relative;
-	background: transparent;
-	overflow-x: hidden;
 }
 
 ul {
@@ -31,6 +27,7 @@ a {
 a:hover{
     color: #fff;
 }
+
 /*	*************************************************
 	HEADER
 	************************************************* */
@@ -74,15 +71,6 @@ header nav a:hover {
 }
 
 
-
-
-/*	*************************************************
-	FIGURE
-	************************************************* */
-
-section {
-}
-
 /*	*************************************************
 	ASIDE
 	************************************************* */
@@ -92,7 +80,6 @@ aside {
 	color: dimgray;
     line-height: 2em;
     text-align: center;
-
     font-size: 1.1em;
 }
 
@@ -147,6 +134,7 @@ footer {
 	padding: 35px 0;
 	height: 130px;
 	text-align: center;
+    margin-bottom: 20px;
 }
 .footer-logo {
     width: 130px;
