@@ -1,3 +1,4 @@
+//Adopted from: https://github.com/bdimitrovski/full_clip
 (function($) {
   // defaults
   $.fn.fullClip = function(options) {
