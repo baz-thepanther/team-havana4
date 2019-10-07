@@ -80,8 +80,7 @@ header nav a:hover {
 	FIGURE
 	************************************************* */
 
-figure img {
-    width: 100%;
+figure {
 }
 
 /*	*************************************************
@@ -176,9 +175,10 @@ header {
 
 
 
-
 figure {
 	grid-column: 1 / span 3;
+    height: 500px;
+    overflow: hidden;
 }
 
 aside {
@@ -206,14 +206,14 @@ footer {
 
 
 .fullBackground {
-  background-position: center center;
+    background-position: center center;
 	background-attachment: fixed;
 	background-size: cover;
 	position: absolute;
 	top: 0;
 	left: 0;
-  width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 	opacity: 0.3;
 	z-index: -1;
 }
